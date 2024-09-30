@@ -8,7 +8,7 @@ COPY . .
 
 RUN go mod tidy
 
-RUN go build -o bot .
+RUN go build -o bot ./cmd/main.go
 
 #CMD ["./bot"] для запуска без nginx
 
